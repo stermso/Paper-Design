@@ -1,7 +1,9 @@
-一.api
+## <p align="center"><a href="https://github.com/stermso/Paper-Design/blob/paper-design-nodeJS%40eggJS/README.md">中文</a> | <a href="https://github.com/stermso/Paper-Design/blob/paper-design-nodeJS%40eggJS/README.en.md">English</a></p>
+
+### 一.api
 1. /find , get , m , 查询某个集合数据
 
-2. /bookDetail , get , id , 根据id查询所有集合中的对应id的data
+2. /bookDetail , get , id , id查询
 
 3. /getHistory , get , 获取历史记录
 
@@ -9,7 +11,7 @@
 
 5. /getNews , get , 获取新书
 
-二.manage
+### 二.manage
 1. /collect , post , id , 根据id收藏,收藏后添加到管理中心的对应数组
 
 2. /cancel , post , id , 根据id取消收藏，删除管理中心收藏数组的对应项

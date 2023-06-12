@@ -1,36 +1,35 @@
-# paper-design-eggAPI
+## <p align="center"><a href="https://github.com/stermso/Paper-Design/blob/paper-design-nodeJS%40eggJS/README.md">中文</a> | <a href="https://github.com/stermso/Paper-Design/blob/paper-design-nodeJS%40eggJS/README.en.md">English</a></p>
 
-#### Description
-{**When you're done, you can delete the content in this README and update the file with details for others getting started with your repository**}
+### 一.api
+1. /find , get , m ; [data query]
 
-#### Software Architecture
-Software architecture description
+2. /bookDetail , get ; id , [id query]
 
-#### Installation
+3. /getHistory , get ; [get history]
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+4. /getCollect , get ; [get collection]
 
-#### Instructions
+5. /getNews , get ; [get new books]
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+### 二.manage
+1. /collect , post , id ; [collect by id and recovery to corresponding array]
 
-#### Contribution
+2. /cancel , post , id ; [cancel collect by id and recovery to corresponding array]
 
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
+3. /doAdd , post ; (form:m,title,abstract,authors,imgUrl,news,collected,) [add books]
 
+4. /delete , post , id ; [delete books by id]
 
-#### Gitee Feature
+5. /change , post , id(get) ，from(title,authors,abstract,collected,news,imgUrl) ; [change books by id]
 
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+6. /search , get , keyword(get) ; [return search result of 'res']  [serach by keywords]
+
+7. /history , get , id(get) ; [add history by id]
+
+8. /login ; [The user name and password are correct, and the cache is set, otherwise it is prompted to make an error]
+
+9. /logout ; [delete cache , logout]
+
+10. /addNews , post , id ; [add new books by id]
+
+11. /cancelNews , post , id ; [delete new books by id]
